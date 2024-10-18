@@ -6,4 +6,4 @@ h = h + 1
 if h > 22:
     h = 1
 
-print(f"{h}:{m:02d}")
+print(f"{h}:{m:d}")
