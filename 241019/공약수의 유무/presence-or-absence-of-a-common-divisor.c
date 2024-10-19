@@ -11,6 +11,7 @@ int main() {
             return 0;
         } else {
             printf("0");
+            break;
         }
     }
     return 0;
