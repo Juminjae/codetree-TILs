@@ -11,13 +11,14 @@ int main() {
 }
 
 int func(int num1, int num2){
-    int cnt = 0;
+    int cnt=0;
     for (int i=num1; i<=num2; i++){
-        if (i%2==0 || i/10==5 || (i%3==0 && i%9!=0)){
-            cnt++;
+        if (i%2==0 || i % 10 == 5 || (i%3==0 && i%9!=0)){
+            continue;
         } else{
-            break;
+            cnt++;
         }
     }
     printf("%d", cnt);
+    return cnt;
 }
