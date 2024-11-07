@@ -6,13 +6,13 @@ int main() {
     scanf("%d", &n);
 
     for (int i=0; i<n; i++){
-        for (int j = 0; j < i; j++) {
+        for (int j = 0; j < 2*i; j++) {
             printf(" ");
         }
         for (int j=0; j<n-i; j++){
             printf("%d ", cnt);
             cnt++;
-            if (cnt == 10){
+            if (cnt > 9){
                 cnt=1;
             }
         }
