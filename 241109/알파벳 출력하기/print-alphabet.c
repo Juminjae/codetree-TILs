@@ -10,6 +10,9 @@ int main() {
         for (int j=0; j<=i; j++){
             printf("%c", str);
             str++;
+            if (str == 'Z'){
+                str = 'A';
+            }
         }
         printf("\n");
     }
