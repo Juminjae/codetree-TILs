@@ -10,7 +10,7 @@ int main() {
         for (int j=0; j<=i; j++){
             printf("%c", str);
             str++;
-            if (str == 'Z'){
+            if (str == '['){
                 str = 'A';
             }
         }
