@@ -15,6 +15,7 @@ int main() {
             }
             cnt++;
         }
+        cnt=0;
         printf("%d\n", cnt);
     }
   
