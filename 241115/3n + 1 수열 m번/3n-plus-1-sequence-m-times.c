@@ -7,15 +7,15 @@ int main() {
 
     for (int i=0; i<m; i++){
         scanf("%d", &n);
-    while (n!=1){
-        if (n%2==0){
-            n /= 2;
-        } else{
-            n = 3*n+1;
+        while (n!=1){
+            if (n%2==0){
+                n /= 2;
+            } else{
+                n = 3*n+1;
+            }
+            cnt++;
         }
-        cnt++;
-    }
-    printf("%d\n", cnt);
+        printf("%d\n", cnt);
     }
   
     return 0;
