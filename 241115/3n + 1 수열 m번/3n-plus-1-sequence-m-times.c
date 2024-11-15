@@ -16,7 +16,9 @@ int main() {
         }
         cnt++;
     }
-    printf("%d\n", cnt);
+    for (int i=0; i<m; i++){
+        printf("%d\n", cnt);    
+    }
   
     return 0;
 }
