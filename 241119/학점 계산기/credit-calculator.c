@@ -15,5 +15,4 @@ int main() {
 
 	printf("%lf", sum_val);
 	return 0;
-    return 0;
 }
