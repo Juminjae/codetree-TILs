@@ -7,15 +7,13 @@ int main() {
     for (int i=0; i<10; i++){
         scanf("%d", &n[i]);
 
-        if (n[i]%2==0){
+        if (i%2==1){
             sum_1 += n[i];
         }
-        if (n[i]%3==0){
+        if ((i+1)%3==0){
             sum += n[i];
             count++;
-        }
-        if (count > 0) {
-            avg = (float)sum / count;  // 평균 계산
+            avg = sum/count;
         }
     }
     printf("%d %.1f",sum_1, avg);
