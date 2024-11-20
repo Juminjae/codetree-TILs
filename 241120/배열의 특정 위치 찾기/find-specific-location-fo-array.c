@@ -13,9 +13,10 @@ int main() {
         if (n[i]%3==0){
             sum += n[i];
             count++;
-            avg = sum/count;
         }
-        
+        if (count > 0) {
+            avg = (float)sum / count;  // 평균 계산
+        }
     }
     printf("%d %.1f",sum_1, avg);
     return 0;
