@@ -2,20 +2,16 @@
 
 int main() {
     int arr[100];
-    int count = 0;
-    int sum = 0;
+    int n;
 
-    while (1) {
-        scanf("%d", &arr[count]);
-        if (arr[count] == 0) break; // 0을 만나면 입력 종료
-        count++;
+    for (int i=0; i<100; i++){
+        scanf("%d", &arr[i]);
+        if (arr[i]==0){
+            n=i;
+            break;
+        }
     }
+    printf("%d", arr[n-3]+arr[n-2]+arr[n-1]);
 
-    if (count >= 3) {
-        sum = arr[count - 3] + arr[count - 2] + arr[count - 1];
-    } else {
-        sum = 0; // 0 이전에 숫자가 3개 미만일 경우 0 출력
-    }
-    printf("%d\n", sum); // 결과 출력
     return 0;
 }
