@@ -2,8 +2,8 @@
 
 int main() {
     // 여기에 코드를 작성해주세요.
-    int n, arr[100], cnt[9]={0};
-    for (int i=0; i<10; i++){
+    int arr[100], cnt[9]={0};
+    for (int i=0; i<100; i++){
         scanf("%d ", &arr[i]);
         if (arr[i]/=10){
             cnt[arr[i]]++;
