@@ -6,5 +6,5 @@ def sequence(n):
     else:
         return sequence(3 // n) + sequence(n - 1)
 
-N = int(input("Enter N: "))
+N = int(input(""))
 print(sequence(N))
