@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// 수열을 계산하는 함수
 int sequence(int n) {
     // 기본 조건
     if (n == 1) {
