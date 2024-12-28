@@ -1,10 +1,11 @@
 n = int(input())
 
-def sequence(n):
-    if n == 1:
+def sequence(a):
+    if a == 1:
         return 1
-    if n == 2:
+    if a == 2:
         return 2
-    return sequence(index) + sequence(n - 1)
+
+    return sequence(a//3) + sequence(a - 1)
 
 print(sequence(n))
